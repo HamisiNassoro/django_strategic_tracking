@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Key Activity</title>
+</head>
+<body>
+    <h2>Create Key Activity</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'activity_list' %}">Back to Activities</a>
+</body>
+</html>

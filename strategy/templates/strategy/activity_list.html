@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity List</title>
+</head>
+<body>
+    <h2>Activity List</h2>
+    <ul>
+        {% for activity in activities %}
+            <li>{{ activity.activity_name }} - {{ activity.expected_output }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'create_activity' %}">Add New Activity</a>
+</body>
+</html>

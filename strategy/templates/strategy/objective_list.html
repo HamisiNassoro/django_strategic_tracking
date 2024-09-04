@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objective List</title>
+</head>
+<body>
+    <h2>Objective List</h2>
+    <ul>
+        {% for objective in objectives %}
+            <li>{{ objective.title }} - {{ objective.description }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'create_objective' %}">Add New Objective</a>
+</body>
+</html>
